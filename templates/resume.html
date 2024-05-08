@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static%}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Wisner Aurelus</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{% static 'hm' %}"><span class="fw-bolder text-primary">Wistech Haïti</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'hm' %}">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'rs' %}">Résumé</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'pj' %}">Projets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'ct' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Résumé</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Experience Section-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                                <!-- Download resume button-->
+                                <!-- Note: Set the link href target to a PDF file within your project-->
+                                <a class="btn btn-primary px-4 py-3" href="https://drive.google.com/file/d/1PK3PoEM2NemxEGeF3H3doXwu-oNgxDYh/view?usp=drive_link" target="_blank">
+                                    <div class="d-inline-block bi bi-download me-2"></div>
+                                    Download mon CV
+                                </a>
+                            </div>
+                            <!-- Experience Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2023 - 2023</div>
+                                                <div class="small fw-bolder">Projet de Portfolio</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>
+                                            Tâches: Conception, développement et maintenance du site.<br>
+                                            Compétences: HTML, CSS, Django, JQuery, Bootstrap.<br>
+                                            Résultats : Site web de portfolio professionnel présentant les compétences et réalisation du candidat.<br> 
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2024 - present</div>
+                                                <div class="small fw-bolder">Plateforme musique</div>
+                                                <div class="small text-muted">Groupe Puissance D'en Haut</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Cette plateforme musicale a été créée dans le but de rapprocher le groupe de ses fans, 
+                                            offrant une expérience interactive et engageante pour découvrir et partager leur musique préférée. 
+                                            Grâce à une conception innovante et des fonctionnalités avancées, cette plateforme offre bien plus qu'une 
+                                            simple écoute de musique.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Education Section-->
+                        <section>
+                            <h2 class="text-secondary fw-bolder mb-4">Formation</h2>
+                            <!-- Education Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2020 - 2024</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Ecole Superieure d'Infotronique d'Haïti</div>
+                                                    <div class="small text-muted">2ème Ruelle Nazon, Port-Au-prince, Haïti</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Master's</div>Science Informatique</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>L'École Supérieure d'Infotronique d'Haïti (ESIH) est une institution d'enseignement 
+                                            supérieur spécialisée dans les domaines de l'informatique et des technologies de l'information en Haïti. Fondée en 1999, elle 
+                                            s'est rapidement positionnée comme l'une des principales références en matière de formation dans le domaine de l'infotronique, 
+                                            combinant l'informatique et l'électronique.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2024 - present</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Data Analytics</div>
+                                                    <div class="small text-muted">Online</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Les données sont omniprésentes. Les entreprises, petites et grandes, locales ou internationales, 
+                                            créent, captent et stockent de gros volumes de données qui augmentent de plus en plus en raison de 
+                                            l'augmentation des données générées par les machines, des appareils IoT, des villes intelligentes, 
+                                            des capteurs, des caméras, etc. Les organisations doivent trouver des moyens de les gérer et de les 
+                                            analyser afin de pouvoir agir sur les données et prendre des décisions commerciales importantes. 
+                                            Cela crée des opportunités croissantes pour les ingénieurs de données, pour structurer les données, 
+                                            et les analystes de données, pour extraire des insights exploitables afin de guider les décisions 
+                                            commerciales.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Card 3-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2024 - 2024</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">PHP | MySQL</div>
+                                                    <div class="small text-muted">Online</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Plateforme</div>OpenClassrooms</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>La formation sur Openclassrooms portant sur la conception d'un site web avec PHP et MySQL est 
+                                            un parcours d'apprentissage complet et pratique, guidant les apprenants à travers les étapes essentielles de la création 
+                                            d'un site web dynamique et interactif. Grâce à des cours structurés et des projets pratiques, cette formation offre aux 
+                                            participants les compétences nécessaires pour développer des sites web robustes, en utilisant PHP pour la logique côté 
+                                            serveur et MySQL pour la gestion des bases de données.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Card 4-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2024 - 2024</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">SQL Server 2022</div>
+                                                    <div class="small text-muted">Online</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Plateforme</div> Linkedin Learning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>LinkedIn Learning propose une variété de formations axées sur SQL Server 2022, couvrant des 
+                                            sujets allant des bases de données aux techniques avancées de gestion et d'analyse des données. La plateforme jouit 
+                                            d'une grande crédibilité grâce à ses instructeurs experts et à ses contenus de qualité, offrant aux apprenants une 
+                                            expérience d'apprentissage enrichissante et pertinente.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Divider-->
+                        <div class="pb-5"></div>
+                        <!-- Skills Section-->
+                        <section>
+                            <!-- Skillset Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <!-- Professional skills list-->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Competences professionnelles</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Administration Windows Server</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Analyse de donnee</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Administration de Base de Donnee</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"></div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"></div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Languages list-->
+                                    <div class="mb-0">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C++</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-6 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
+                                            <div class="col mb-6 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Java</div></div>
+                                            {% comment %} <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"></div></div> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Wistech Haïti 2024</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="{% url 'ct'%}">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
